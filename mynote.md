@@ -15,3 +15,10 @@
     which file.sh        //look over file path
     --'xp'--to exchange two char
     --'rc'--change the char in front of the cursor to 'c'
+## firefox
+    '/' to start search
+    __ctrl+g__  find next
+    __ctrl+c+l__   change URL
+    __ctrl+r__     refresh
+    __ctrl+k__     to google
+
