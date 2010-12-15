@@ -21,4 +21,17 @@
     __ctrl+c+l__   change URL
     __ctrl+r__     refresh
     __ctrl+k__     to google
-
+# creat a tar ball
+    tar zcvf toy.tgz toy
+    tar zxvf toy.tgz
+# stop a process by force
+    ps aux|grep firefox
+    kill -9 [the process number of firefox]
+    or we can kill by name
+    killall firefox
+# about bash
+    #!/bin/bash
+    for file in a b c d;
+    do
+        echo $file            //bash is very sensitive to space
+    done
