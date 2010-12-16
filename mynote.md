@@ -53,4 +53,11 @@
     then
         mv a a.c
     fi
-    
+## example
+    #!/bin/bash
+    echo -n "want to say hello?(Y/n):"
+    read AAA
+    if [ ${AAA:-y} = "y" ];                  //note space
+    then
+        echo hello
+    fi
