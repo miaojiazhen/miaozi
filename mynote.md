@@ -35,3 +35,22 @@
     do
         echo $file            //bash is very sensitive to space
     done
+## "a.c"->"a"
+    #!/bin/bash
+    WOKDIR=$1
+    CD $WOKDIR
+    for file in `ls`;
+    do
+        f=`echo $file|awk -F'.' '{ print $1 }'`
+        mv $file $f
+    done;
+## How to usage 'if' in bash
+    test -f hello.h           
+    echo $?                     //if have a hello.h ,put out 0
+
+    #!/bin/bash
+    if [ -f a ]
+    then
+        mv a a.c
+    fi
+    
