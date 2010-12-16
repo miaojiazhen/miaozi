@@ -61,3 +61,12 @@
     then
         echo hello
     fi
+    
+    #!/bin/bash
+    WOKDIR=$1
+    cd $WOKDIR
+    for file in `ls`
+    do
+        f=`echo $file|awk -F'.' ' { print $1 }'`
+        echo $file $f
+    done
